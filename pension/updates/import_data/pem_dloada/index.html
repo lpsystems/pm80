@@ -16,7 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
     <script src="/pm80/js/bootstrap-min.js" type="text/javascript"></script>
-    <script src="/pm80/js/main.js?v=20260616015215" type="text/javascript"></script>
+    <script src="/pm80/js/main.js?v=20260616092207" type="text/javascript"></script>
 
     <meta name="generator" content="nanoc 4.9.1">
   </head>
@@ -84,7 +84,7 @@ used in the General Data Load program.</p>
 <h2>Data File Formats &amp; Field Default Values.</h2>
 
 <p>Templates can be found in the General Data Load program which the user can use to
-create their own load. These templates are based on the formats shown below for each database table the template load codes are listed beside the description. Query the template load code and then press update to assigned it to a scheme for loading.
+create their own load. These templates are based on the formats shown below for each database table the template load codes are listed beside the description. Query the template load code and then press update to assign it to a scheme for loading.
 Also, during the load some fields may not be included in the data file, or the data in the data file is found to be blank. In these cases the fields are automatically updated by the General Data Load with a default value. The fields with default values are also listed below for each database table</p>
 
 <div class="row">
@@ -103,7 +103,7 @@ Also, during the load some fields may not be included in the data file, or the d
           <td style="text-align: left">Scheme Code/Address Code</td>
         </tr>
         <tr>
-          <td style="text-align: left"><a href="#macceri">Accured Benefits and Estimated Retirement Income</a></td>
+          <td style="text-align: left"><a href="#macceri">Accrued Benefits and Estimated Retirement Income</a></td>
           <td style="text-align: left">Member Number/NI Number/Staff Number<br />Benefits Type<br />Illustration Date</td>
         </tr>
         <tr>
@@ -124,7 +124,7 @@ Also, during the load some fields may not be included in the data file, or the d
         </tr>
         <tr>
           <td style="text-align: left"><a href="#carehist">Care History Screen</a></td>
-          <td style="text-align: left">Member Number/NI Number/Staff Number<br />Care Code<br />Revaulation Date<br />Amount</td>
+          <td style="text-align: left">Member Number/NI Number/Staff Number<br />Care Code<br />Revaluation Date<br />Amount</td>
         </tr>
         <tr>
           <td style="text-align: left"><a href="#chargeunithistory">Charging Unit Price Load</a></td>
@@ -317,7 +317,7 @@ Also, during the load some fields may not be included in the data file, or the d
 </div>
 
 <div class="alert alert-danger" role="alert">
-  <p>If any of the datalines in the datafile reference a member number that does not have a Accrued Benefits and Estimated Retirement Income record already existing on Pension Master, then an exception will be produced for this dataline and the line will need to be removed from the datafile before you try to load the data again.</p>
+  <p>If any of the datalines in the datafile reference a member number that does not have an Accrued Benefits and Estimated Retirement Income record already existing on Pension Master, then an exception will be produced for this dataline and the line will need to be removed from the datafile before you try to load the data again.</p>
 </div>
 
 <h2><a id="basicdpen"></a>Basic Deferred Pensioner Details - ‘New’ type load only - Template TEMPDPNS</h2>
@@ -1144,7 +1144,7 @@ they are using, during the running process.</p>
 
 <h2><a id="factors"></a>Factors - ‘New’ type load only - Template TEMP</h2>
 
-<p>A new type load will be used to add a brand new table, a new index on an exsisting table or to add a new date to an exsisting table. If a description is not present in the data field the table code will be used as the description.
+<p>A new type load will be used to add a brand new table, a new index on an existing table or to add a new date to an existing table. If a description is not present in the data field the table code will be used as the description.
 If a new index is being added and other indexes with the range weren’t included those indexes are set to zero. Example range currently 1 to 5 new index of 8 to 10 added the index of 6 and 7 is set to zero.</p>
 
 <p>The data file format is:</p>
@@ -1157,7 +1157,7 @@ If a new index is being added and other indexes with the range weren’t include
 
 <h2><a id="factors"></a>Factor - ‘Update’ type load only - Template TEMP</h2>
 
-<p>The only field that can be updated is an exsisting Factor Value.</p>
+<p>The only field that can be updated is an existing Factor Value.</p>
 
 <p>The data file format is:</p>
 
@@ -1437,7 +1437,7 @@ type, effective date, member number, then an exception report will be created wi
 </div>
 
 <div class="alert alert-danger" role="alert">
-  <p>If any of the datalines in the datafile reference a member number, contribution code and effective date that do not exist on Pension Master, then that particular dataline will be ignored but will not stop the rest of the datalines being processed..</p>
+  <p>If any of the datalines in the datafile reference a member number, contribution code and effective date that do not exist on Pension Master, then that particular dataline will be ignored but will not stop the rest of the datalines being processed.</p>
 </div>
 
 <h2><a id="memnotes"></a>Member Notes - ‘New’ type load only - Template TEMPNOT</h2>
@@ -1483,7 +1483,7 @@ type, effective date, member number, then an exception report will be created wi
 
 <h2><a id="multiplebatcon"></a>Multiple Contribution Batch - ‘New’ type load only - Template TEMPCONM</h2>
 
-<p>Pension Master can hold an unlimited number of Contributions type now against a scheme, rather than just the standard five (EEORD, EEAVC, ERORD,EEPR and ERPR. So this load is use if you want to create a batch with more than one contribution type.</p>
+<p>Pension Master can hold an unlimited number of Contributions type now against a scheme, rather than just the standard five (EEORD, EEAVC, ERORD, EEPR and ERPR). So this load is used if you want to create a batch with more than one contribution type.</p>
 
 <div class="well">
 
@@ -1850,7 +1850,7 @@ user defined screen type, then an exception report will be created with the line
 
       <div id="footer">
         <p>Copyright &copy; 1987-2026 L&amp;P Systems Limited. All rights reserved. <a href="/pm80/cookiepolicy.html">Cookie Policy</a>.</p>
-        <p>Version 8.0 &bull; Build Date 16/06/2026 01:52:15.</p>
+        <p>Version 8.0 &bull; Build Date 16/06/2026 09:22:07.</p>
       </div>
     </div>
   </body>
