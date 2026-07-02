@@ -16,7 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"  type="text/javascript"></script>
     <script src="/pm80/js/bootstrap-min.js" type="text/javascript"></script>
-    <script src="/pm80/js/main.js?v=20260702014859" type="text/javascript"></script>
+    <script src="/pm80/js/main.js?v=20260702081831" type="text/javascript"></script>
 
     <meta name="generator" content="nanoc 4.9.1">
   </head>
@@ -265,8 +265,15 @@ generated for you. You will not be permitted to amend this.</p>
 and how certain screens are displayed. Select the Region from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>UK</li>
+  <li>Ireland</li>
+  <li>Belgium</li>
+  <li>Denmark</li>
+  <li>Jamaica</li>
+  <li>Gibraltar</li>
+  <li>Trinidad and Tobago</li>
+  <li>Norway</li>
+  <li>Sweden</li>
 </ul>
 
 <p><a id="psc_alt_code"></a><strong>ALTERNATIVE SCHEME CODE</strong> - Enter an alternative to
@@ -305,8 +312,9 @@ defined benefits scheme to allow for current market conditions.</p>
 <p><a id="psc_type"></a><strong>SCHEME TYPE</strong> - Select one of the following options from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Defined Benefits</li>
+  <li>Defined Contributions</li>
+  <li>Hybrid</li>
 </ul>
 
 <p><a id="psc_c_out"></a><strong>CONTRACTED OUT</strong> - Indicates that the scheme is contracted
@@ -367,8 +375,19 @@ scheme.</p>
 <p><a id="psc_status"></a><strong>STATUS</strong> - This field denotes that the status of the scheme Select one of the options from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Active</li>
+  <li>Frozen</li>
+  <li>Frozen DB with Active DC</li>
+  <li>In Wind Up</li>
+  <li>Inactive</li>
+  <li>Paid Up</li>
+  <li>Test</li>
+  <li>Transferred</li>
+  <li>Wound Up</li>
+  <li>Not Staged Yet</li>
+  <li>Not Proceeding</li>
+  <li>Not Decided</li>
+  <li>Transferring Out</li>
 </ul>
 
 <p><a id="psc_care"></a><strong>CARE SCHEME</strong> - This field denotes that the scheme
@@ -386,8 +405,18 @@ is a SSAS scheme. By ticking this then have access to the SSAS screens at scheme
 <p><a id="psc_sal_freq"></a><strong>SALARY FREQUENCY</strong> - This field denotes the salary frequency used in the <a href="/pm80/pension/reports/standard_reports/per_consalcap/">Contribution Salary Cap Report</a>. Select a Salary Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Third Party Information Required</li>
+  <li>DB or Cash Balance - ERI not required</li>
+  <li>DB or Cash Balance - Benefit being calculated, available in 10 working days</li>
+  <li>DC - Benefit being calculated, available in 3 working days</li>
+  <li>DC/Hybrid - value of pot less than 5,000GBP, no contributions, no further SMPI</li>
+  <li>DC/Hybrid - within 2 years of retirement date or older</li>
+  <li>Member Action Outstanding From User</li>
+  <li>New Member - ERI pension not yet available</li>
+  <li>New Member - ERI value not yet available</li>
+  <li>Subject to PPF Assessment - contact administrator</li>
+  <li>Transaction Outstanding</li>
+  <li>Scheme Winding Up - contact administrator</li>
 </ul>
 
 <p><a id="psc_cont_sal_cap"></a><strong>CONTRIBUTION SALARY CAP</strong> - This field denotes the cap used in the <a href="/pm80/pension/reports/standard_reports/per_consalcap/">Contribution Salary Cap Report</a>.</p>
@@ -1217,8 +1246,10 @@ rate for investments in this fund. This defaults to 100%.</p>
 <p><a id="psf_rebate_freq"></a><strong>REBATE FREQUENCY</strong> - Select the Rebate Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annual</li>
+  <li>Half Yearly</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
 </ul>
 
 <p>You cannot delete a fund from a scheme if any members of the scheme have investments
@@ -1308,8 +1339,12 @@ Generic quote for the projections calculation.</p>
 <p><a id="psct_type"></a><strong>CONTRIBUTION TYPE</strong> - Select the Contribution Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Recurring Income</li>
+  <li>Recurring Income - Legacy Pension Provider Basis</li>
+  <li>Recurring Income - New Pension Provider Basis</li>
+  <li>Separately Accrued Lump Sum</li>
+  <li>Separately Accrued Lump Sum - Legacy Pension Provider Basis</li>
+  <li>Separately Accrued Lump Sum - New Pension Provider Basis</li>
 </ul>
 
 <p><a id="psct_tvin"></a><strong>CONTRIBUTION TYPE SOLELY FOR TVIN</strong> - Tick if this contribution should
@@ -1893,22 +1928,26 @@ options can be found <a href="/pm80/pension/updates/peu_reval/#destdlg">here</a>
 <p><a id="pctt_freq"></a><strong>REVALUATION FREQUENCY</strong> - Select the frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annual</li>
+  <li>Biannual</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
 </ul>
 
 <p><a id="pctt_date_type"></a><strong>EFFECTIVE DATE TYPE</strong> - Select the date type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Benefit-Specific</li>
+  <li>Cash Balance Illustration</li>
+  <li>Statutory Money Purchase Illustration</li>
 </ul>
 
 <p><a id="pctt_reval_day"></a><strong>DATE OF REVALUATION</strong> - Select the date of the revaluation from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Month Start</li>
+  <li>Month End</li>
+  <li>Specific Day in Month</li>
 </ul>
 
 <p><a id="pctt_dsy"></a><strong>DAY</strong> - Enter the day if the value of the previous field is specfic day. Valid entries are 1 - 31.</p>
@@ -1938,15 +1977,23 @@ return to the <a href="/pm80/pension/file_maintenance/pem_sch/#Introduction">Sch
 <p><a id="psmh_type"></a><strong>TYPE</strong> - Select a Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Benefit Does Not Include AVC</li>
+  <li>Benefit Calculated In Non-Sterling Currency</li>
+  <li>Accrued Value When Active Member</li>
+  <li>Benefit Supplemented By FAS</li>
+  <li>Pension Earmarking Order Held</li>
+  <li>Post Normal Retirement</li>
+  <li>Pension Sharing/Splitting Order Held</li>
+  <li>Scheme Pays Benefit - Actual Pension Will Be Lower</li>
+  <li>Benefit Has A Transferred-In Element</li>
+  <li>Underpinned Benefit</li>
 </ul>
 
 <p><a id="psmh_eff_dt"></a><strong>EFFECTIVE DATE</strong> - Select a date type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Immediate</li>
+  <li>Renewal Date</li>
 </ul>
 
 <p><a id="psmh_salary"></a><strong>SALARY</strong> - The salary type from the salaries set up for the scheme.</p>
@@ -1962,15 +2009,28 @@ return to the <a href="/pm80/pension/file_maintenance/pem_sch/#Introduction">Sch
 <p><a id="psmh_cap_inc_rate"></a><strong>SALARY CAP INCREASE RATE</strong> - Enter or select from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Date Joined Company</li>
+  <li>None - Fixed Cap</li>
+  <li>CPI</li>
+  <li>Salary Growth</li>
+  <li>CPI Capped at 3%</li>
+  <li>CPI Capped at 4%</li>
+  <li>CPI Capped at 5%</li>
 </ul>
 
 <p><a id="psmh_service_dt"></a><strong>SERVICE DATE</strong> - Select the Service Date from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Benefit Does Not Include AVC</li>
+  <li>Benefit Calculated In Non-Sterling Currency</li>
+  <li>Accrued Value When Active Member</li>
+  <li>Benefit Supplemented By FAS</li>
+  <li>Pension Earmarking Order Held</li>
+  <li>Post Normal Retirement</li>
+  <li>Pension Sharing/Splitting Order Held</li>
+  <li>Scheme Pays Benefit - Actual Pension Will Be Lower</li>
+  <li>Benefit Has A Transferred-In Element</li>
+  <li>Underpinned Benefit</li>
 </ul>
 
 <p><a id="psmb_age"></a><strong>AGE</strong> - Entered the age.</p>
@@ -2042,8 +2102,10 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpa_freq"></a><strong>FREQUENCY</strong> - Select the Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annual</li>
+  <li>Half Yearly</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
 </ul>
 
 <p><a id="psexpa_fut_incr"></a><strong>FUTURE INCREASES</strong> - Tick if there are future increases.</p>
@@ -2051,15 +2113,24 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpa_fut_incr_basis"></a><strong>FUTURE INCREASES BASIS</strong> - Select the Future Increases Basis from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Benefit Does Not Include AVC</li>
+  <li>Benefit Calculated In Non-Sterling Currency</li>
+  <li>Accrued Value When Active Member</li>
+  <li>Benefit Supplemented By FAS</li>
+  <li>Pension Earmarking Order Held</li>
+  <li>Post Normal Retirement</li>
+  <li>Pension Sharing/Splitting Order Held</li>
+  <li>Scheme Pays Benefit - Actual Pension Will Be Lower</li>
+  <li>Benefit Has A Transferred-In Element</li>
+  <li>Underpinned Benefit</li>
 </ul>
 
 <p><a id="psexpa_eff_dt_type"></a><strong>EFFECTIVE DATE TYPE</strong> - Select the Effective Date Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Renewal Date</li>
+  <li>Calendar Year</li>
+  <li>Other</li>
 </ul>
 
 <p><a id="psexpa_eff_day"></a><strong>EFFECTIVE DAY</strong> - Enter a day i.e. 1 if type is Other.</p>
@@ -2083,8 +2154,10 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpd_freq"></a><strong>FREQUENCY</strong> - Select the Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annual</li>
+  <li>Half Yearly</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
 </ul>
 
 <p><a id="psexpd_fut_incr"></a><strong>FUTURE INCREASES</strong> - Tick if there are future increases.</p>
@@ -2092,15 +2165,17 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpd_fut_incr_basis"></a><strong>FUTURE INCREASES BASIS</strong> - Select the Future Increases Basis from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>None</li>
+  <li>CPI</li>
+  <li>Earnings</li>
 </ul>
 
 <p><a id="psexpd_eff_dt_type"></a><strong>EFFECTIVE DATE TYPE</strong> - Select the Effective Date Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Renewal Date</li>
+  <li>Calendar Year</li>
+  <li>Other</li>
 </ul>
 
 <p><a id="psexpd_eff_dd"></a><strong>EFFECTIVE DAY</strong> - Enter a day i.e. 1 if type is Other.</p>
@@ -2161,8 +2236,15 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpa_freq"></a><strong>FREQUENCY</strong> - Select the Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annually</li>
+  <li>Half Yearly</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
+  <li>4 Weekly</li>
+  <li>Fortnightly</li>
+  <li>Weekly</li>
+  <li>Irregular</li>
+  <li>One-Off</li>
 </ul>
 
 <p><a id="psexpa_fut_incr"></a><strong>FUTURE INCREASES</strong> - Tick if there are future increases.</p>
@@ -2170,15 +2252,19 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpa_fut_incr_basis"></a><strong>FUTURE INCREASES BASIS</strong> - Select the Future Increases Basis from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>None</li>
+  <li>CPI</li>
+  <li>Earnings</li>
 </ul>
 
 <p><a id="psexpa_eff_dt_type"></a><strong>EFFECTIVE DATE TYPE</strong> - Select the Effective Date Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Buy Out</li>
+  <li>Death</li>
+  <li>End of Dependency</li>
+  <li>Other</li>
+  <li>Trivial Commutation</li>
 </ul>
 
 <p><a id="psexpa_eff_day"></a><strong>EFFECTIVE DAY</strong> - Enter a day i.e. 1 if type is Other.</p>
@@ -2202,8 +2288,10 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpd_freq"></a><strong>FREQUENCY</strong> - Select the Frequency from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Annual</li>
+  <li>Half Yearly</li>
+  <li>Quarterly</li>
+  <li>Monthly</li>
 </ul>
 
 <p><a id="psexpd_fut_incr"></a><strong>FUTURE INCREASES</strong> - Tick if there are future increases.</p>
@@ -2211,15 +2299,17 @@ See <a href="/pm80/pension/file_maintenance/pem_sch/#SEXP">Contribution Expenses
 <p><a id="psexpd_fut_incr_basis"></a><strong>FUTURE INCREASES BASIS</strong> - Select the Future Increases Basis from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Always</li>
+  <li>Tolerance</li>
+  <li>Never</li>
 </ul>
 
 <p><a id="psexpd_eff_dt_type"></a><strong>EFFECTIVE DATE TYPE</strong> - Select the Effective Date Type from the drop-down list:</p>
 
 <ul>
-  <li>Male</li>
-  <li>Female</li>
+  <li>Renewal Date</li>
+  <li>Calendar Year</li>
+  <li>Other</li>
 </ul>
 
 <p><a id="psexpd_eff_dd"></a><strong>EFFECTIVE DAY</strong> - Enter a day i.e. 1 if type is Other.</p>
@@ -2413,7 +2503,7 @@ menu.</p>
 
       <div id="footer">
         <p>Copyright &copy; 1987-2026 L&amp;P Systems Limited. All rights reserved. <a href="/pm80/cookiepolicy.html">Cookie Policy</a>.</p>
-        <p>Version 8.0 &bull; Build Date 02/07/2026 01:48:59.</p>
+        <p>Version 8.0 &bull; Build Date 02/07/2026 08:18:31.</p>
       </div>
     </div>
   </body>
